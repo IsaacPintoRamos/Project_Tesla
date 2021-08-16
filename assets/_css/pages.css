@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/*****MODEL Y*****/
+#modelY {
+    background-image: url(../_images/img02.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#modelY .info {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#modelY h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+    color: var(--h1-color);
+}
+
+#modelY .info h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'GothamBook', Arial, Helvetica;
+    color: var(--h2-color);
+}
+
+#modelY h2 a {
+    color: var(--h1-color);
+}
+
+/*****MODEL 3*****/
+#model3 {
+    background-image: url(../_images/img03.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#model3 .info {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#model3 h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+    color: var(--h1-color);
+}
+
+#model3 .info h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'GothamBook', Arial, Helvetica;
+    color: var(--h2-color);
+}
+
+#model3 h2 a {
+    color: var(--h1-color);
+}
+
+/*****MODEL X*****/
+#modelX {
+    background-image: url(../_images/img04.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#modelX .info {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#modelX h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+    color: var(--h1-color);
+}
+
+#modelX .info h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'GothamBook', Arial, Helvetica;
+    color: var(--h2-color);
+}
+
+#modelX h2 a {
+    color: var(--h1-color);
+}

@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+/**********ANIMATIONS**********/
+@keyframes arrow {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 15px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+/**********VAR**********/
+:root {
+    --header-color: #000;
+    --h1-color: #393c41;
+    --h2-color: #637378;
+
+    --btnLeft-bg: rgba(23, 26, 32, 0.8);
+    --btnRight-bg: rgba(255, 255, 255, 0.65);
+
+    --btnLeft-color: #fff;
+    --btnRight-color: #000;
+}
+/**********FONTS**********/
+
+@font-face {
+    font-family: GothamMedium;
+    src: url(../_fonts/GothamMedium.otf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(../_fonts/GothamBookRegular.otf);
+}
+
+body {
+    font-family: 'GothamMedium', Arial, Helvetica;
+    font-size: 14px;
+    margin: 0;
+}
+
+/**********HEADER**********/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/**********HEADER LOGO**********/
+header .logo {
+    width: 120px;
+    margin-left: 20px;
+}
+
+/**********HEADER MIDDLE**********/
+header ul,
+header li {
+    list-style: none;
+}
+
+header .middle ul{
+    display: flex;
+}
+
+header .middle li {
+    margin: 0 10px;
+}
+
+header .middle a {
+    color: var(--header-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/**********HEADER RIGHT**********/
+header .rightSide ul{
+    display: flex;
+}
+
+header .rightSide li {
+    margin: 0 10px;
+}
+
+header .rightSide a {
+    color: var(--header-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/**********MENU ICON**********/
+header .fieldMenuIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 18px;
+    height: 16px;
+    
+}
+
+header .fieldMenuIcon div {
+    display: flex;
+    height: 2px;
+    background-color: var(--header-color);
+    justify-content: center;
+    cursor: pointer;
+}
+
+/**********MAIN**********/
+main {
+    background-image: url(../_images/img01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+main .info {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+main h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+    color: var(--h1-color);
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'GothamBook', Arial, Helvetica;
+    color: var(--h2-color);
+}
+
+main h2 a {
+    color: var(--h1-color);
+}
+
+/**********FOOTER**********/
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    
+}
+
+footer .buttonsArea {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+
+
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    
+}
+
+.buttonsArea a {
+    display: block;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+
+footer .btnLeft {
+    color: var(--btnLeft-color);
+    background-color: var(--btnLeft-bg);
+}
+
+footer .btnRight {
+    color: var(--btnRight-color);
+    background-color: var(--btnRight-bg);
+}
+
+footer .arrowArea {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.arrowArea .itemArrow {
+    height: 15px;
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+/**********MENU ICON**********/
+
+/**********RESPONSIVE**********/
+@media (max-width: 1200px){
+    header .middle{
+        display: none;
+    }
+
+    header .rightSide li {
+        display: none;
+    }
+
+
+    header .rightSide .menuIcon {
+        display: block;
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    footer .buttonsArea {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonsArea a {
+        margin: 10px 20px;
+        width: calc(100vw - 60px);
+
+    }
+
+    
+}
